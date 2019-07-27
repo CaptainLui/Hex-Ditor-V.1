@@ -9,7 +9,7 @@ def message():
     message_win=Tk()
     message_win.geometry=(200,100)
     message_win.title("Warning !")
-    message_win.info=Label(text="Warning , this version is still on develoment , please check the Github adress for new releases",padx="100",pady="25")
+    message_win.info=Label(text="Warning , this version is still on development , please check the Github adress for new releases",padx="100",pady="25")
     message_win.info.grid()
     message_win.info=Label(text="Github adress : git.io/CaptainLui ",padx="100",pady="25")
     message_win.info.grid()
