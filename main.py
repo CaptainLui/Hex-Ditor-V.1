@@ -1,6 +1,20 @@
 from tkinter import*
-root=Tk()
-root.title("Hex-Editor")
-root.geometry("600,600")
-root.mainloop()
-
+def start():
+    root=Tk()
+    root.title("Hex-Ditor")
+    root.quitb=Button(text="Quit",padx="50",command=root.destroy)
+    root.quitb.grid()
+    root.mainloop()
+def message():
+    message_win=Tk()
+    message_win.geometry=(200,100)
+    message_win.title("Warning !")
+    message_win.info=Label(text="Warning , this version is still on develoment , please check the Github adress for new releases",padx="100",pady="25")
+    message_win.info.grid()
+    message_win.info=Label(text="Github adress : git.io/CaptainLui ",padx="100",pady="25")
+    message_win.info.grid()
+    message_win.skip=Button(text="Continue",padx="30",command=(message_win.destroy))
+    message_win.skip.grid()
+    message_win.mainloop()
+message()
+start()
